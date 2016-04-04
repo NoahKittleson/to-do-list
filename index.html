@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>To Do List Maker:</h1>
+      <div class="row">
+        <form id="listForm" class="col-xs-3 .col-xs-offset-4" >
+          <div class="form-group">
+            <label for="task">Task</label>
+            <input class="form-control" type="text" id="task">
+            <label class="input-group bootstrap-timepicker timepicker">Time</label>
+            <input id="timepicker1" type="number" class="form-control input-small" placeholder="in minutes">
+            <label for="day">Day</label>
+            <select class="form-control" id="day">
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+            </select>
+
+            <button id="button" type="submit"class="btn btn-success">Add</button>
+          </div>
+        </form>
+        <button id="buttonTime" type="click" class="btn btn-warning">Total Task Time</button>
+      </div>
+      <div id="hidden">
+        <ul id = "list">
+        </ul>
+        <span id="totalTime"></span>
+      </div>
+      <div id="show-task">
+        <p>Task: <span id="name"></span></p>
+        <p>Time: <span id="time"></span></p>
+        <p>Day: <span id="day"></span></p>
+      </div>
+    </div>
+  </body>
+</html>

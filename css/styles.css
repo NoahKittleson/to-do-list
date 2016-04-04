@@ -1,0 +1,26 @@
+ul {
+  list-style: none;
+}
+
+.hidden{
+ display: none;
+}
+#listTask{
+
+
+
+}
+.listTasks li{
+  list-style-type: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#show-task {
+  display: none;
+}
+.row{
+
+}
